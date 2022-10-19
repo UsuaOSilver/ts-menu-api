@@ -26,6 +26,15 @@ const app = express();
  *  App Configuration
  */
 
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
+
+
 /**
  * Server Activation
  */
+
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`);
+});
