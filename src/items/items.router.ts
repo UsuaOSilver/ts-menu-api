@@ -2,6 +2,10 @@
  *  Required External Module and Interfaces
  */
 
+import express, { Request, Response } from "express";
+import * as ItemService from "./items.service";
+import { BaseItem, Item } from "./item.interface";
+
 /**
  *  Router Definition
  */
